@@ -87,7 +87,7 @@ hr {
 }
 
 .img {
-    background-color: hsl(178, 100%, 50%);
+    justify-content: center;
     border-radius: 0.5em;
     margin-bottom: 1.5em;
     overflow: hidden;
@@ -95,15 +95,34 @@ hr {
     height: 60%;
 }
 
-.img img{
+.img-icon{
+    background-color: hsla(178, 100%, 50%, 0.379);
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-icon:hover{
+    opacity: 1;
+}
+
+#icon{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.img .img-card{
     object-fit: cover;
     cursor: pointer;
     width: 100%;
     height: 100%;  
-}
-
-.img img:hover{
-    opacity: 0.5;
 }
 
 .price {

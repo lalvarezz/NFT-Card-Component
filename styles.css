@@ -28,7 +28,6 @@ body {
 
 .creator {
     display: flex;
-    flex-direction: row;
 }
 
 .creator img{
@@ -55,7 +54,6 @@ body {
 .eth img, .days img{
     object-fit: contain;
     height: 1em; 
-    margin: 0;
     margin-right: 0.3em;
     width: 1em
 }
@@ -93,10 +91,12 @@ hr {
     border-radius: 0.5em;
     margin-bottom: 1.5em;
     overflow: hidden;
+    position: relative;
     height: 60%;
 }
 
 .img img{
+    object-fit: cover;
     cursor: pointer;
     width: 100%;
     height: 100%;  
@@ -106,13 +106,8 @@ hr {
     opacity: 0.5;
 }
 
-
 .price {
     display: flex;
     margin: 1em 0;
     position:relative;
 }
-
-
-
-
